@@ -1,0 +1,12 @@
+let Sprite1 = game.createSprite(2, 2)
+basic.forever(function () {
+    Sprite1.move(1)
+    basic.pause(100)
+    Sprite1.ifOnEdgeBounce()
+    Sprite1.turn(Direction.Right, 45)
+    basic.pause(100)
+    Sprite1.move(-2)
+    Sprite1.ifOnEdgeBounce()
+    basic.pause(100)
+    Sprite1.turn(Direction.Right, 45)
+})
